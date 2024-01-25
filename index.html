@@ -12,44 +12,52 @@
 </head>
 
 <body> 
-    <img class="logo" src="assets/logo.gif" alt="logo-convert-money">
+    <img class="logo" src="assets/money-exchange.png" alt="logo-convert-money">
 
     <main> 
         <label> 
             Convert <b>of</b>
             <select> 
+                <option>R$ Brazilian Real</option>
                 <option>$ Dollar</option>
+                <option>€ Euro</option>
+                <option>£ Pound</option>
+                <option>Bitcoin</option>
+                
             </select>
         </label>
 
         <label> 
             Convert <b>for</b>
-            <select> 
-                <option>€ Euro</option>
-                <option>R$ Brazilian Real</option>
+            <select class="currency-select"> 
+                <option value="dolar">$ Dollar</option>   
+                <option value="euro">€ Euro</option>
+                <option value="pound">£ Pound</option>
+                <option value="bitcoin">₿ Bitcoin</option>
+                
             </select>
         </label>
 
         <label>
             Value 
-            <input class="input-currency" placeholder="$ 1,000.00">
+            <input class="input-currency" placeholder="1.000,00">
         </label>
 
         <button class="convert-button">To Convert</button>
         
         <section>
             <div class="currency-box">
-                <img src="./assets/dolar.png" alt="currency-dolar">
-                <p class="currency">Dollar</p>
-                <p class="currency-value">$ 0.00</p>
+                <img src="./assets/real.png" alt="currency-real">
+                <p class="currency">Real</p>
+                <p class="currency-value-to-convert">R$ 0.00</p>
             </div>
 
-            <img class="arrow-img" src="./assets/arrow.png"  alt="arrow.converting">
+            <img class="arrow-img" src="./assets/grey-arrow.png"  alt="arrow.converting">
 
             <div class="currency-box">               
-                <img src="./assets/real.png" alt="currency-converted">
-                <p class="currency">Real</p>
-                <p lass="currency-value">R$ 0,00</p>
+                <img class="currency-img" src="./assets/dolar.png" alt="currency-converted">
+                <p class="currency" id="currency-name">Dollar</p>
+                <p class="currency-value">US$ 0,00</p>
             </div>
         </section>
 
